@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson3-1</title>
+</head>
+<body>
+    <!--Tao form dang ky tai khoan-->
+  <form action="">
+    <h3>Đăng ký tài khoản</h3>
+    <label for="fname">Họ:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+
+    <label for="lname">Tên:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="telepone">Điện thoại</label>
+    <input type="text" id="telephone" name="telephone"><br><br>
+
+    <label for="quantity">Năm sinh:</label>
+    <input type="number" id="quantity" name="quantity" min="1900" max="2100" step="1" value="2000"><br><br>
+
+    <p>Giới tính</p>
+    <input type="radio" id="nam" name="fav_language" value="nam">
+    <label for="nam">Nam</label><br>
+    <input type="radio" id="nữ" name="fav_language" value="nữ">
+    <label for="nữ">Nữ</label><br><br>
+
+    <p>Quốc tịch</p>
+    <select id="nations" name="nation">
+        <option value="Vietnam">Việt nam</option>
+        <option value="USA">USA</option>
+    </select><br><br>
+
+    <button type="submit" value="submit">Submit</button>
+    <button type="reset" value="reset">Reset</button>
+  </form>  
+</body>
+</html>
