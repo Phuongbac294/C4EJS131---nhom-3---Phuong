@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phương nhóm 3 - Test đầu vào - 0977809587</title>
+  
+</head>
+<body>
+    <!-- Bài 1 : Nhập 2 số a, b; tìm các số nguyên tố giữa 2 số và in ra HTML -->
+    <div>
+        <h3>Tìm các só nguyên tố giữa 2 số a, b :</h3>
+        
+            <label for="a">Nhập số a :</label>
+            <input type="number" name="a" id="a"><br>
+            <label for="b">Nhập số b :</label>
+            <input type="number" name="b" id="b"><br>
+            <button id="btn">Xác nhận</button>
+      
+        <p>Các số nguyên tố là : <span id="primes"></span></p>
+    </div>
+
+
+</body>
+<script>
+    // bài 1
+    
+    let btn = document.getElementById('btn');
+    let primes = document.getElementById('primes');
+    // console.log(typeof(a));
+    // console.log(typeof(b));
+    
+    btn.addEventListener('click', addPrimes);
+
+    function addPrimes() {
+        let a = parseInt(document.getElementById('a').value);
+        let b = parseInt(document.getElementById('b').value);
+        console.log(a, b);
+        for (let i=a; i<=b; i++) {
+            if (Number.isInteger(Math.log2(i+1))) {
+                var prime = document.createTextNode(i + ', ');
+                primes.appendChild(prime);
+            }
+
+        }
+        
+    }
+
+    // Bài 2
+    let n = document.getElementById('n');
+    let btn1 = document.getElementById('btn1');
+    
+
+    function numberOneTriangle(n) {
+        var c = '';
+        for (let i=1; i<=n; i++ ) {
+            c = c + '*';
+            console.log(c);
+        }
+    }
+    numberOneTriangle(5)
+
+    // bài 3
+</script>
+</html>
